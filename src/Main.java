@@ -13,8 +13,6 @@ public class Main {
         RDPFileParser rdpFileParser  = new RDPFileParser(); 
 
         Stream<String> lines = rdpFileDataReader.readCompleteDataFromFile();
-        //DEBUG output : Lines from file
-        //lines.forEach(System.out::println);;
 
         ArrayList<RDPFileLineData> dataParsed = rdpFileParser.parseToFormat(lines);
         
