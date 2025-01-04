@@ -1,15 +1,15 @@
-package dataParser.RDPFileLineData;
+package FileDataParser.RDPFileLineData;
 
-import dataParser.dataFormat.DataEntryFormat;
+import FileDataParser.dataFormat.DataEntryFormat;
 
 public class RDPFileLineData extends DataEntryFormat {
 
-    private String  date;
-    private String  time;
-    private String id;
-    private String deviceList;
-    private String  readList;
-    private String code;
+    private final String  date;
+    private final String  time;
+    private final String id;
+    private final String deviceList;
+    private final String  readList;
+    private final String code;
 
     public RDPFileLineData(String date, String time, String  id, String  deviceList, String  readList,
             String code) {

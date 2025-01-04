@@ -1,4 +1,4 @@
-package dataParser.dataFormat;
+package FileDataParser.dataFormat;
 
 
 abstract public class DataEntryFormat {
