@@ -1,8 +1,12 @@
 package Schedulers;
 
+import DataStorage.DataStorage;
+import FileDataParser.RDPFileLineData.RDPFileLineData;
+import FileDataParser.RDPFileParser.RDPFileParser;
 import RDPFileDataReader.RDPFileDataReader;
 import SourceDirChecker.SourceDirChecker;
 
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.concurrent.*;
 import java.util.stream.Stream;
@@ -25,21 +29,25 @@ public class RDPFileConcurrentProcessCtr {
     //Queue for the list of files to be read and parsed
     private final BlockingQueue<Set<String>> filesToBeReadQueue = new ArrayBlockingQueue<>(1);
     //Queue for the file content encapsulated into Stream<String>
-    private final BlockingQueue<Stream<String>> linesFromFiles = new ArrayBlockingQueue<>(10000);
+    private final BlockingQueue<ArrayList<RDPFileLineData>> parsedFiles = new ArrayBlockingQueue<>(1000);
 
     //Executor service for two threads:  file data reader and file data parser
     private static final Executor executor  = Executors.newFixedThreadPool(2);
 
     private final SourceDirChecker srcDirChecker;
+    private final DataStorage dataStorage;
 
     private final Runnable srcDirectoryCheckerRunnable;
     private final Runnable RDPFileDataReaderRunnable;
-    //private final Runnable RDPFileDataParserRunnable;
+    private final Runnable RDPDataStorageRunnable;
 
     public RDPFileConcurrentProcessCtr(String srcDir, Integer trackInterval){
         this._trackInterval = trackInterval;
         this.srcDirChecker =  new SourceDirChecker(srcDir, filesToBeReadQueue);
+        this.dataStorage = new DataStorage();
 
+
+        //Runnable for source directory checker: executed by scheduler
         this.srcDirectoryCheckerRunnable = ()->{
             try {
                 srcDirChecker.trackTheFileDirectory();
@@ -47,26 +55,39 @@ public class RDPFileConcurrentProcessCtr {
                 logger.fatal(e.getMessage());
             }
         };
-
+        //Runnable for File Reader + Parser: called in a thread once list of file(s) is available
         this.RDPFileDataReaderRunnable = ()->{
             Set<String> filesToBeRead;
             try {
                 while (true){
                     filesToBeRead = filesToBeReadQueue.take();
                     for(String file : filesToBeRead){
-                        linesFromFiles.put(RDPFileDataReader
-                                .readCompleteDataFromFile(srcDirChecker.getSrcDir() + file));
+                        RDPFileParser rdpFileParser = new RDPFileParser();
+                        Stream<String> fileContent =RDPFileDataReader
+                                .readCompleteDataFromFile(srcDirChecker.getSrcDir() + file);
+
+                        parsedFiles.put(rdpFileParser.parseToFormat(fileContent));
                     }
-                    Stream<String> lines = linesFromFiles.take();
-
-                    lines.forEach(System.out::println);
-
                     filesToBeRead.clear();
                 }
             } catch (InterruptedException e) {
                 logger.fatal(e.getMessage());
             }
         };
+
+        //Runnable for line data parser + storage
+        this.RDPDataStorageRunnable = () ->{
+            try {
+                ArrayList<RDPFileLineData> fileContent = parsedFiles.take();
+                for (RDPFileLineData line : fileContent){
+                    dataStorage.storeInternally(line);
+                }
+                System.out.println("Test");
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        };
+
     }
 
     public void startControl(){
@@ -76,6 +97,7 @@ public class RDPFileConcurrentProcessCtr {
                 scheduler.scheduleAtFixedRate(srcDirectoryCheckerRunnable, 0, _trackInterval, SECONDS);
 
         executor.execute(RDPFileDataReaderRunnable);
+        executor.execute(RDPDataStorageRunnable);
     }
 
 
