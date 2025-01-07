@@ -4,6 +4,10 @@ package SourceDirChecker;
 //by the time modified. If the actual time differs from storied the file should be read again
 //Checking should be made on a regular basis - for example, each 5 min
 
+import lombok.Getter;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,47 +15,34 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.*;
+import java.util.concurrent.BlockingQueue;
+
 
 public class SourceDirChecker {
 
-    private final Integer TRACK_INTERVAL = 10;  // track interval in secs.
+    private static final Logger logger = LogManager.getLogger(SourceDirChecker.class);
+    @Getter
+    private final String srcDir;
     private final File srcDirectory;
     private final Map<String, BasicFileAttributes> filesAttributes = new HashMap<>();
+    private final BlockingQueue<Set<String>> queue;
     private final Set<String> filesToBeRead = new TreeSet<>();
-    private volatile boolean stoppedTracking = false;
-    private final Object mutex = new Object();
-    public SourceDirChecker(String _srcDir){
-        srcDirectory = new File(_srcDir);
+
+    public SourceDirChecker(String _srcDir, BlockingQueue<Set<String>> queue){
+        this.srcDir = _srcDir;
+        this.srcDirectory = new File(_srcDir);
+        this.queue = queue;
+    }
+
+    public void trackTheFileDirectory() throws Exception {
+        readDirAndCheckTheFiles();
     }
 
 
-     //Start tracking endless by certain interval.
-    // it works but not the best implementation -> better to rewrite later
-    public void trackTheFileDirectory(){
-
-        Runnable trackingThread = () -> {
-            while(!stoppedTracking){
-                System.out.println("Start checking the directory");
-                try {
-                    readDirAndCheckTheFiles();
-                    System.out.println("Checking the directory completed");
-                    Thread.sleep(TRACK_INTERVAL * 1000L);
-                } catch (Exception e) {
-                    throw new RuntimeException(e);
-                }
-
-            }
-
-        };
-
-        Thread thread = new Thread(trackingThread);
-        thread.start();
-    }
-
-    public void stopTracking(){
-        stoppedTracking = true;
-    }
-
+    /**
+     * Should be called in timely bases to check the directory for new files
+     * or modified ones
+     */
     private void readDirAndCheckTheFiles() throws Exception {
 
         String[] subFiles = srcDirectory.list();
@@ -67,10 +58,7 @@ public class SourceDirChecker {
                 if(filesAttributes.containsKey(_file)){
                     BasicFileAttributes attrExisted = filesAttributes.get(_file);
                     if(!attrExisted.lastModifiedTime().equals(attr.lastModifiedTime())){
-                        synchronized (mutex){
                             filesToBeRead.add(_file);
-                        }
-
                     }
                 }
 
@@ -78,28 +66,21 @@ public class SourceDirChecker {
                 //add to map + add to list for reading
                 if(!filesAttributes.containsKey(_file)){
                     filesAttributes.put(_file, attr);
-                    filesToBeRead.add(_file);
+                        filesToBeRead.add(_file);
                 }
 
             } catch (IOException e) {
                 throw new Exception("Cannot read the file");
             }
+
         }
 
+        //Put the produced Set in the external blocking queue to be consumed
+        //The queue must be empty before we put produced into it
+        //IMPORTANT! filesToBeRead must be cleared in consumer!
+        logger.info("Waiting the blocking queue to be empty...");
+        queue.put(filesToBeRead);
+        logger.info("List of files has been added to queue");
     }
-
-public Set<String> getFilesToBeRead(){
-        synchronized (mutex){
-            return filesToBeRead;
-        }
-}
-
-public void flushFilesToBeRead(){
-        synchronized (mutex){
-            filesToBeRead.clear();
-        }
-    }
-
-
 
 }
