@@ -1,53 +1,43 @@
 package FileDataParser.RDPFileLineData;
 
 import FileDataParser.dataFormat.DataEntryFormat;
+import Utils.StringToDateParser;
+import lombok.Getter;
+import org.jetbrains.annotations.NotNull;
 
-public class RDPFileLineData extends DataEntryFormat {
+import java.time.LocalDateTime;
 
-    private final String  date;
-    private final String  time;
+@Getter
+public class RDPFileLineData extends DataEntryFormat implements Comparable<RDPFileLineData> {
+
+    private final String date;
+    private final String time;
     private final String id;
     private final String deviceList;
-    private final String  readList;
+    private final String readList;
     private final String code;
+    private final LocalDateTime timeStamp;
 
-    public RDPFileLineData(String date, String time, String  id, String  deviceList, String  readList,
-            String code) {
+    public RDPFileLineData(String date, String time,
+                           String  id, String  deviceList,
+                           String  readList, String code) {
         this.date = date;
         this.time = time;
         this.id = id;
         this.deviceList = deviceList;
         this.readList = readList;
         this.code = code;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public String getTime() {
-        return time;
-    }
-
-    public String  getId() {
-        return id;
-    }
-
-    public String  getDeviceList() {
-        return deviceList;
-    }
-
-    public String  getReadList() {
-        return readList;
-    }
-
-    public String getCode() {
-        return code;
+        this.timeStamp = StringToDateParser.parseStringToDate(date + " " + time);
     }
 
     @Override
     public String toString() {
-        return "RDPFileLineData [date=" + date + ", time=" + time + ", id=" + id + ", deviceList=" + deviceList
-                + ", readList=" + readList + ", code=" + code + "]";
+        return "date=" + date + ", time=" + time + ", id=" + id + ", deviceList=" + deviceList
+                + ", readList=" + readList + ", code=" + code;
+    }
+
+    @Override
+    public int compareTo(@NotNull RDPFileLineData other) {
+        return StringToDateParser.compareTimeStamps(this.timeStamp, other.getTimeStamp());
     }
 }
