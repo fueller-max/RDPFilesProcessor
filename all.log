@@ -1,345 +1,115 @@
-2025-01-08 19:50:10.076 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
-2025-01-08 19:50:10.080 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
-2025-01-08 19:50:10.087 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120511rw.dat
-2025-01-08 19:50:10.247 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120512rw.dat
-2025-01-08 19:50:10.258 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120513rw.dat
-2025-01-08 19:50:10.259 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120514rw.dat
-2025-01-08 19:50:10.263 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120515rw.dat
-2025-01-08 19:50:10.264 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120516rw.dat
-2025-01-08 19:50:10.269 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120517rw.dat
-2025-01-08 19:50:10.294 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120518rw.dat
-2025-01-08 19:50:10.322 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120519rw.dat
-2025-01-08 19:50:10.374 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120520rw.dat
-2025-01-08 19:50:10.376 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120521rw.dat
-2025-01-08 19:50:10.378 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120611rw.dat
-2025-01-08 19:50:10.424 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120612rw.dat
-2025-01-08 19:50:10.431 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120613rw.dat
-2025-01-08 19:50:10.435 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120614rw.dat
-2025-01-08 19:50:10.436 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120615rw.dat
-2025-01-08 19:50:10.437 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120616rw.dat
-2025-01-08 19:50:10.440 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120617rw.dat
-2025-01-08 19:50:10.457 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120618rw.dat
-2025-01-08 19:50:10.514 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120619rw.dat
-2025-01-08 19:50:10.572 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120620rw.dat
-2025-01-08 19:50:10.573 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120621rw.dat
-2025-01-08 19:50:10.574 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120711rw.dat
-2025-01-08 19:50:10.595 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120712rw.dat
-2025-01-08 19:50:10.605 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120713rw.dat
-2025-01-08 19:50:10.607 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120714rw.dat
-2025-01-08 19:50:10.609 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120715rw.dat
-2025-01-08 19:50:10.611 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120716rw.dat
-2025-01-08 19:50:10.615 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120717rw.dat
-2025-01-08 19:50:10.623 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120718rw.dat
-2025-01-08 19:50:10.635 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120719rw.dat
-2025-01-08 19:50:10.651 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120720rw.dat
-2025-01-08 19:50:10.652 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120721rw.dat
-2025-01-08 19:50:10.653 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120811rw.dat
-2025-01-08 19:50:10.688 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120812rw.dat
-2025-01-08 19:50:10.706 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120813rw.dat
-2025-01-08 19:50:10.706 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120814rw.dat
-2025-01-08 19:50:10.708 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120815rw.dat
-2025-01-08 19:50:10.709 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120816rw.dat
-2025-01-08 19:50:10.709 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120817rw.dat
-2025-01-08 19:50:10.719 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120818rw.dat
-2025-01-08 19:50:10.731 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120819rw.dat
-2025-01-08 19:50:10.749 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120820rw.dat
-2025-01-08 19:50:10.751 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120821rw.dat
-2025-01-08 19:50:10.752 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120911rw.dat
-2025-01-08 19:50:10.780 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120912rw.dat
-2025-01-08 19:50:10.783 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120913rw.dat
-2025-01-08 19:50:10.784 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120914rw.dat
-2025-01-08 19:50:10.785 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120915rw.dat
-2025-01-08 19:50:10.786 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120916rw.dat
-2025-01-08 19:50:10.787 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120917rw.dat
-2025-01-08 19:50:10.793 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120918rw.dat
-2025-01-08 19:50:10.807 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120919rw.dat
-2025-01-08 19:50:10.820 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120920rw.dat
-2025-01-08 19:50:10.821 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24120921rw.dat
-2025-01-08 19:50:10.822 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121011rw.dat
-2025-01-08 19:50:10.836 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121012rw.dat
-2025-01-08 19:50:10.839 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121013rw.dat
-2025-01-08 19:50:10.839 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121014rw.dat
-2025-01-08 19:50:10.840 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121015rw.dat
-2025-01-08 19:50:10.841 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121016rw.dat
-2025-01-08 19:50:10.841 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121017rw.dat
-2025-01-08 19:50:10.846 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121018rw.dat
-2025-01-08 19:50:10.854 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121019rw.dat
-2025-01-08 19:50:10.863 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121020rw.dat
-2025-01-08 19:50:10.864 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121021rw.dat
-2025-01-08 19:50:10.865 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121111rw.dat
-2025-01-08 19:50:10.886 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121112rw.dat
-2025-01-08 19:50:10.890 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121113rw.dat
-2025-01-08 19:50:10.891 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121114rw.dat
-2025-01-08 19:50:10.892 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121115rw.dat
-2025-01-08 19:50:10.893 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121116rw.dat
-2025-01-08 19:50:10.893 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121117rw.dat
-2025-01-08 19:50:10.905 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121118rw.dat
-2025-01-08 19:50:10.921 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121119rw.dat
-2025-01-08 19:50:10.956 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121120rw.dat
-2025-01-08 19:50:10.958 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121121rw.dat
-2025-01-08 19:50:10.960 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121211rw.dat
-2025-01-08 19:50:11.041 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121212rw.dat
-2025-01-08 19:50:11.052 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121213rw.dat
-2025-01-08 19:50:11.054 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121214rw.dat
-2025-01-08 19:50:11.055 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121215rw.dat
-2025-01-08 19:50:11.055 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121216rw.dat
-2025-01-08 19:50:11.056 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121217rw.dat
-2025-01-08 19:50:11.067 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121218rw.dat
-2025-01-08 19:50:11.079 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121219rw.dat
-2025-01-08 19:50:11.121 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121220rw.dat
-2025-01-08 19:50:11.125 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121221rw.dat
-2025-01-08 19:50:11.129 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121311rw.dat
-2025-01-08 19:50:11.188 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121312rw.dat
-2025-01-08 19:50:11.206 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121313rw.dat
-2025-01-08 19:50:11.208 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121314rw.dat
-2025-01-08 19:50:11.211 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121315rw.dat
-2025-01-08 19:50:11.213 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121316rw.dat
-2025-01-08 19:50:11.214 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121317rw.dat
-2025-01-08 19:50:11.221 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121318rw.dat
-2025-01-08 19:50:11.230 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121319rw.dat
-2025-01-08 19:50:11.244 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121320rw.dat
-2025-01-08 19:50:11.244 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121321rw.dat
-2025-01-08 19:50:11.245 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121411rw.dat
-2025-01-08 19:50:11.266 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121412rw.dat
-2025-01-08 19:50:11.271 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121413rw.dat
-2025-01-08 19:50:11.272 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121414rw.dat
-2025-01-08 19:50:11.272 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121415rw.dat
-2025-01-08 19:50:11.273 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121416rw.dat
-2025-01-08 19:50:11.274 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121417rw.dat
-2025-01-08 19:50:11.299 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121418rw.dat
-2025-01-08 19:50:11.308 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121419rw.dat
-2025-01-08 19:50:11.317 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121420rw.dat
-2025-01-08 19:50:11.318 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121421rw.dat
-2025-01-08 19:50:11.318 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121511rw.dat
-2025-01-08 19:50:11.334 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121512rw.dat
-2025-01-08 19:50:11.337 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121513rw.dat
-2025-01-08 19:50:11.341 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121514rw.dat
-2025-01-08 19:50:11.348 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121515rw.dat
-2025-01-08 19:50:11.350 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121516rw.dat
-2025-01-08 19:50:11.351 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121517rw.dat
-2025-01-08 19:50:11.372 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121518rw.dat
-2025-01-08 19:50:11.388 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121519rw.dat
-2025-01-08 19:50:11.419 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121520rw.dat
-2025-01-08 19:50:11.439 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121521rw.dat
-2025-01-08 19:50:11.441 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121611rw.dat
-2025-01-08 19:50:11.456 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121612rw.dat
-2025-01-08 19:50:11.462 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121613rw.dat
-2025-01-08 19:50:11.467 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121614rw.dat
-2025-01-08 19:50:11.470 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121615rw.dat
-2025-01-08 19:50:11.471 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121616rw.dat
-2025-01-08 19:50:11.472 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121617rw.dat
-2025-01-08 19:50:11.476 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121618rw.dat
-2025-01-08 19:50:11.483 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121619rw.dat
-2025-01-08 19:50:11.496 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121620rw.dat
-2025-01-08 19:50:11.497 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121621rw.dat
-2025-01-08 19:50:11.498 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121711rw.dat
-2025-01-08 19:50:11.509 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121712rw.dat
-2025-01-08 19:50:11.511 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121713rw.dat
-2025-01-08 19:50:11.512 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121714rw.dat
-2025-01-08 19:50:11.512 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121715rw.dat
-2025-01-08 19:50:11.513 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121716rw.dat
-2025-01-08 19:50:11.515 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121717rw.dat
-2025-01-08 19:50:11.519 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121718rw.dat
-2025-01-08 19:50:11.525 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121719rw.dat
-2025-01-08 19:50:11.532 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121720rw.dat
-2025-01-08 19:50:11.533 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121721rw.dat
-2025-01-08 19:50:11.534 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121811rw.dat
-2025-01-08 19:50:11.561 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121812rw.dat
-2025-01-08 19:50:11.566 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121813rw.dat
-2025-01-08 19:50:11.567 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121814rw.dat
-2025-01-08 19:50:11.569 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121815rw.dat
-2025-01-08 19:50:11.569 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121816rw.dat
-2025-01-08 19:50:11.570 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121817rw.dat
-2025-01-08 19:50:11.575 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121818rw.dat
-2025-01-08 19:50:11.598 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121819rw.dat
-2025-01-08 19:50:11.613 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121820rw.dat
-2025-01-08 19:50:11.614 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121821rw.dat
-2025-01-08 19:50:11.614 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121911rw.dat
-2025-01-08 19:50:11.645 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121912rw.dat
-2025-01-08 19:50:11.652 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121913rw.dat
-2025-01-08 19:50:11.653 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121914rw.dat
-2025-01-08 19:50:11.658 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121915rw.dat
-2025-01-08 19:50:11.659 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121916rw.dat
-2025-01-08 19:50:11.680 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121917rw.dat
-2025-01-08 19:50:11.694 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121918rw.dat
-2025-01-08 19:50:11.705 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121919rw.dat
-2025-01-08 19:50:11.716 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121920rw.dat
-2025-01-08 19:50:11.718 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24121921rw.dat
-2025-01-08 19:50:11.730 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122011rw.dat
-2025-01-08 19:50:11.749 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122012rw.dat
-2025-01-08 19:50:11.753 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122013rw.dat
-2025-01-08 19:50:11.754 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122014rw.dat
-2025-01-08 19:50:11.755 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122015rw.dat
-2025-01-08 19:50:11.755 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122016rw.dat
-2025-01-08 19:50:11.756 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122017rw.dat
-2025-01-08 19:50:11.789 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122018rw.dat
-2025-01-08 19:50:11.796 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122019rw.dat
-2025-01-08 19:50:11.807 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122020rw.dat
-2025-01-08 19:50:11.808 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122021rw.dat
-2025-01-08 19:50:11.808 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122111rw.dat
-2025-01-08 19:50:11.822 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122112rw.dat
-2025-01-08 19:50:11.824 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122113rw.dat
-2025-01-08 19:50:11.824 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122114rw.dat
-2025-01-08 19:50:11.825 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122115rw.dat
-2025-01-08 19:50:11.826 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122116rw.dat
-2025-01-08 19:50:11.826 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122117rw.dat
-2025-01-08 19:50:11.830 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122118rw.dat
-2025-01-08 19:50:11.837 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122119rw.dat
-2025-01-08 19:50:11.847 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122120rw.dat
-2025-01-08 19:50:11.847 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122121rw.dat
-2025-01-08 19:50:11.848 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122211rw.dat
-2025-01-08 19:50:11.860 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122212rw.dat
-2025-01-08 19:50:11.863 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122213rw.dat
-2025-01-08 19:50:11.864 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122214rw.dat
-2025-01-08 19:50:11.868 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122215rw.dat
-2025-01-08 19:50:11.869 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122216rw.dat
-2025-01-08 19:50:11.870 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122217rw.dat
-2025-01-08 19:50:11.873 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122218rw.dat
-2025-01-08 19:50:11.879 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122219rw.dat
-2025-01-08 19:50:11.887 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122220rw.dat
-2025-01-08 19:50:11.888 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122221rw.dat
-2025-01-08 19:50:11.888 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122311rw.dat
-2025-01-08 19:50:11.896 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122312rw.dat
-2025-01-08 19:50:11.898 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122313rw.dat
-2025-01-08 19:50:11.899 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122314rw.dat
-2025-01-08 19:50:11.899 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122315rw.dat
-2025-01-08 19:50:11.900 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122316rw.dat
-2025-01-08 19:50:11.900 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122317rw.dat
-2025-01-08 19:50:11.904 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122318rw.dat
-2025-01-08 19:50:11.910 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122319rw.dat
-2025-01-08 19:50:11.917 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122320rw.dat
-2025-01-08 19:50:11.918 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122321rw.dat
-2025-01-08 19:50:11.918 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122411rw.dat
-2025-01-08 19:50:11.929 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122412rw.dat
-2025-01-08 19:50:11.931 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122413rw.dat
-2025-01-08 19:50:11.932 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122414rw.dat
-2025-01-08 19:50:11.932 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122415rw.dat
-2025-01-08 19:50:11.933 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122416rw.dat
-2025-01-08 19:50:11.933 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122417rw.dat
-2025-01-08 19:50:11.937 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122418rw.dat
-2025-01-08 19:50:11.943 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122419rw.dat
-2025-01-08 19:50:11.951 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122420rw.dat
-2025-01-08 19:50:11.951 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122421rw.dat
-2025-01-08 19:50:11.952 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122511rw.dat
-2025-01-08 19:50:11.963 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122512rw.dat
-2025-01-08 19:50:11.965 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122513rw.dat
-2025-01-08 19:50:11.966 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122514rw.dat
-2025-01-08 19:50:11.966 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122515rw.dat
-2025-01-08 19:50:11.967 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122516rw.dat
-2025-01-08 19:50:11.967 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122517rw.dat
-2025-01-08 19:50:11.970 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122518rw.dat
-2025-01-08 19:50:11.975 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122519rw.dat
-2025-01-08 19:50:11.980 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122520rw.dat
-2025-01-08 19:50:11.981 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122521rw.dat
-2025-01-08 19:50:11.982 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122611rw.dat
-2025-01-08 19:50:12.026 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122612rw.dat
-2025-01-08 19:50:12.029 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122613rw.dat
-2025-01-08 19:50:12.030 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122614rw.dat
-2025-01-08 19:50:12.030 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122615rw.dat
-2025-01-08 19:50:12.031 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122616rw.dat
-2025-01-08 19:50:12.032 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122617rw.dat
-2025-01-08 19:50:12.037 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122618rw.dat
-2025-01-08 19:50:12.046 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122619rw.dat
-2025-01-08 19:50:12.060 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122620rw.dat
-2025-01-08 19:50:12.061 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122621rw.dat
-2025-01-08 19:50:12.061 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122711rw.dat
-2025-01-08 19:50:12.084 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122712rw.dat
-2025-01-08 19:50:12.088 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122713rw.dat
-2025-01-08 19:50:12.089 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122714rw.dat
-2025-01-08 19:50:12.090 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122715rw.dat
-2025-01-08 19:50:12.090 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122716rw.dat
-2025-01-08 19:50:12.091 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122717rw.dat
-2025-01-08 19:50:12.101 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122718rw.dat
-2025-01-08 19:50:12.116 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122719rw.dat
-2025-01-08 19:50:12.130 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122720rw.dat
-2025-01-08 19:50:12.131 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122721rw.dat
-2025-01-08 19:50:12.131 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122811rw.dat
-2025-01-08 19:50:12.153 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122812rw.dat
-2025-01-08 19:50:12.156 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122813rw.dat
-2025-01-08 19:50:12.157 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122814rw.dat
-2025-01-08 19:50:12.158 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122815rw.dat
-2025-01-08 19:50:12.158 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122816rw.dat
-2025-01-08 19:50:12.159 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122817rw.dat
-2025-01-08 19:50:12.166 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122818rw.dat
-2025-01-08 19:50:12.177 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122819rw.dat
-2025-01-08 19:50:12.192 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122820rw.dat
-2025-01-08 19:50:12.192 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122821rw.dat
-2025-01-08 19:50:12.193 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122911rw.dat
-2025-01-08 19:50:12.219 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122912rw.dat
-2025-01-08 19:50:12.225 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122913rw.dat
-2025-01-08 19:50:12.225 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122914rw.dat
-2025-01-08 19:50:12.225 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122915rw.dat
-2025-01-08 19:50:12.226 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122916rw.dat
-2025-01-08 19:50:12.227 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122917rw.dat
-2025-01-08 19:50:12.236 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122918rw.dat
-2025-01-08 19:50:12.254 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122919rw.dat
-2025-01-08 19:50:12.278 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122920rw.dat
-2025-01-08 19:50:12.279 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24122921rw.dat
-2025-01-08 19:50:12.280 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123011rw.dat
-2025-01-08 19:50:12.313 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123012rw.dat
-2025-01-08 19:50:12.319 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123013rw.dat
-2025-01-08 19:50:12.319 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123014rw.dat
-2025-01-08 19:50:12.320 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123015rw.dat
-2025-01-08 19:50:12.321 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123016rw.dat
-2025-01-08 19:50:12.322 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123017rw.dat
-2025-01-08 19:50:12.331 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123018rw.dat
-2025-01-08 19:50:12.345 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123019rw.dat
-2025-01-08 19:50:12.363 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123020rw.dat
-2025-01-08 19:50:12.363 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123021rw.dat
-2025-01-08 19:50:12.364 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123111rw.dat
-2025-01-08 19:50:12.376 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123112rw.dat
-2025-01-08 19:50:12.380 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123113rw.dat
-2025-01-08 19:50:12.380 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123114rw.dat
-2025-01-08 19:50:12.381 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123115rw.dat
-2025-01-08 19:50:12.382 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123116rw.dat
-2025-01-08 19:50:12.383 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123117rw.dat
-2025-01-08 19:50:12.391 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123118rw.dat
-2025-01-08 19:50:12.404 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123119rw.dat
-2025-01-08 19:50:12.417 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123120rw.dat
-2025-01-08 19:50:12.418 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\24123121rw.dat
-2025-01-08 19:50:12.418 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010111rw.dat
-2025-01-08 19:50:12.434 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010112rw.dat
-2025-01-08 19:50:12.436 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010113rw.dat
-2025-01-08 19:50:12.437 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010114rw.dat
-2025-01-08 19:50:12.438 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010115rw.dat
-2025-01-08 19:50:12.439 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010116rw.dat
-2025-01-08 19:50:12.439 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010117rw.dat
-2025-01-08 19:50:12.444 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010118rw.dat
-2025-01-08 19:50:12.451 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010119rw.dat
-2025-01-08 19:50:12.461 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010120rw.dat
-2025-01-08 19:50:12.462 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010121rw.dat
-2025-01-08 19:50:12.463 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010211rw.dat
-2025-01-08 19:50:12.481 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010212rw.dat
-2025-01-08 19:50:12.484 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010213rw.dat
-2025-01-08 19:50:12.484 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010214rw.dat
-2025-01-08 19:50:12.485 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010215rw.dat
-2025-01-08 19:50:12.485 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010216rw.dat
-2025-01-08 19:50:12.485 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010217rw.dat
-2025-01-08 19:50:12.490 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010218rw.dat
-2025-01-08 19:50:12.497 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010219rw.dat
-2025-01-08 19:50:12.507 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010220rw.dat
-2025-01-08 19:50:12.507 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010221rw.dat
-2025-01-08 19:50:12.508 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010311rw.dat
-2025-01-08 19:50:12.544 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010312rw.dat
-2025-01-08 19:50:12.547 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010313rw.dat
-2025-01-08 19:50:12.547 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010314rw.dat
-2025-01-08 19:50:12.547 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010315rw.dat
-2025-01-08 19:50:12.548 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010316rw.dat
-2025-01-08 19:50:12.548 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010317rw.dat
-2025-01-08 19:50:12.551 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010318rw.dat
-2025-01-08 19:50:12.556 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010319rw.dat
-2025-01-08 19:50:12.564 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010320rw.dat
-2025-01-08 19:50:12.564 [pool-2-thread-1] INFO  RDPFileDataReader.RDPFileDataReader - File has been successfully read from path: C:\Users\Maksim\IdeaProjects\RDPFilesProcessor\data_files\rawfiles\25010321rw.dat
-2025-01-08 19:50:20.047 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 11.txt
-2025-01-08 19:50:20.134 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 12.txt
-2025-01-08 19:50:20.139 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 13.txt
-2025-01-08 19:50:20.140 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 14.txt
-2025-01-08 19:50:20.141 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 15.txt
-2025-01-08 19:50:20.142 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 16.txt
-2025-01-08 19:50:20.143 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 17.txt
-2025-01-08 19:50:20.153 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 18.txt
-2025-01-08 19:50:20.164 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 19.txt
-2025-01-08 19:50:20.183 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 20.txt
-2025-01-08 19:50:20.184 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 21.txt
-2025-01-08 19:50:30.063 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
-2025-01-08 19:50:30.063 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:43:12.968 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:43:12.973 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:43:22.916 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 11.txt
+2025-01-11 16:43:22.953 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 12.txt
+2025-01-11 16:43:22.958 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 15.txt
+2025-01-11 16:43:22.960 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 16.txt
+2025-01-11 16:43:22.963 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 17.txt
+2025-01-11 16:43:22.969 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 18.txt
+2025-01-11 16:43:22.977 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 19.txt
+2025-01-11 16:43:22.985 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 20.txt
+2025-01-11 16:43:32.918 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 11.txt
+2025-01-11 16:43:32.923 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 12.txt
+2025-01-11 16:43:32.925 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 13.txt
+2025-01-11 16:43:32.926 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 14.txt
+2025-01-11 16:43:32.926 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 15.txt
+2025-01-11 16:43:32.927 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 16.txt
+2025-01-11 16:43:32.928 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 17.txt
+2025-01-11 16:43:32.930 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 18.txt
+2025-01-11 16:43:32.935 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 19.txt
+2025-01-11 16:43:42.917 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 11.txt
+2025-01-11 16:43:42.923 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 12.txt
+2025-01-11 16:43:42.925 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 17.txt
+2025-01-11 16:43:42.928 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 18.txt
+2025-01-11 16:43:42.931 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 19.txt
+2025-01-11 16:43:52.924 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 11.txt
+2025-01-11 16:43:52.929 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 12.txt
+2025-01-11 16:43:52.931 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 16.txt
+2025-01-11 16:43:52.931 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 17.txt
+2025-01-11 16:43:52.934 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 18.txt
+2025-01-11 16:43:52.937 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 19.txt
+2025-01-11 16:43:52.941 [pool-4-thread-1] INFO  DataStorage.DataStorage - File created: 21.txt
+2025-01-11 16:44:02.925 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 11.txt
+2025-01-11 16:44:02.929 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 12.txt
+2025-01-11 16:44:02.930 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 17.txt
+2025-01-11 16:44:02.933 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 18.txt
+2025-01-11 16:44:02.936 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 19.txt
+2025-01-11 16:44:12.923 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 11.txt
+2025-01-11 16:44:12.932 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 12.txt
+2025-01-11 16:44:12.934 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 16.txt
+2025-01-11 16:44:12.935 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 17.txt
+2025-01-11 16:44:12.937 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 18.txt
+2025-01-11 16:44:12.941 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 19.txt
+2025-01-11 16:44:12.952 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:44:12.952 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:44:22.921 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 11.txt
+2025-01-11 16:44:22.925 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 12.txt
+2025-01-11 16:44:22.926 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 15.txt
+2025-01-11 16:44:22.928 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 17.txt
+2025-01-11 16:44:22.929 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 18.txt
+2025-01-11 16:44:22.932 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 19.txt
+2025-01-11 16:44:32.917 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 11.txt
+2025-01-11 16:44:32.924 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 12.txt
+2025-01-11 16:44:32.925 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 16.txt
+2025-01-11 16:44:32.926 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 17.txt
+2025-01-11 16:44:32.927 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 18.txt
+2025-01-11 16:44:32.929 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 19.txt
+2025-01-11 16:44:42.918 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 11.txt
+2025-01-11 16:44:42.923 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 12.txt
+2025-01-11 16:44:42.924 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 15.txt
+2025-01-11 16:44:42.924 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 17.txt
+2025-01-11 16:44:42.926 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 18.txt
+2025-01-11 16:44:42.928 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 19.txt
+2025-01-11 16:44:52.914 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 11.txt
+2025-01-11 16:44:52.921 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 12.txt
+2025-01-11 16:44:52.922 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 16.txt
+2025-01-11 16:44:52.923 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 17.txt
+2025-01-11 16:44:52.925 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 18.txt
+2025-01-11 16:44:52.927 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 19.txt
+2025-01-11 16:45:02.916 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 11.txt
+2025-01-11 16:45:02.919 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 12.txt
+2025-01-11 16:45:02.920 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 17.txt
+2025-01-11 16:45:02.922 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 18.txt
+2025-01-11 16:45:02.925 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 19.txt
+2025-01-11 16:45:12.914 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 11.txt
+2025-01-11 16:45:12.919 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 12.txt
+2025-01-11 16:45:12.921 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 17.txt
+2025-01-11 16:45:12.924 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 18.txt
+2025-01-11 16:45:12.928 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 19.txt
+2025-01-11 16:45:12.937 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:45:17.122 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:45:22.915 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 11.txt
+2025-01-11 16:45:22.916 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 12.txt
+2025-01-11 16:45:22.917 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 15.txt
+2025-01-11 16:45:22.918 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 17.txt
+2025-01-11 16:45:22.919 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 18.txt
+2025-01-11 16:45:22.920 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 19.txt
+2025-01-11 16:46:12.935 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:46:12.935 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:47:12.954 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:47:12.954 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:48:12.955 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:48:12.956 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:49:12.953 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:49:12.953 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:50:12.943 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:50:12.944 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:51:12.944 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:51:12.944 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:52:12.938 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:52:12.939 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:52:22.919 [pool-4-thread-1] INFO  DataStorage.DataStorage - File already exists: 12.txt
+2025-01-11 16:53:12.945 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:53:12.946 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:54:12.935 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:54:12.935 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:55:12.930 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:55:12.930 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:56:12.956 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:56:12.957 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:57:12.957 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:57:12.958 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:58:12.934 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:58:12.934 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue
+2025-01-11 16:59:12.942 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - Waiting the blocking queue to be empty...
+2025-01-11 16:59:12.942 [pool-3-thread-1] INFO  SourceDirChecker.SourceDirChecker - List of files has been added to queue

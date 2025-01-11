@@ -7,12 +7,15 @@ import RDPFileDataReader.RDPFileDataReader;
 import SourceDirChecker.SourceDirChecker;
 
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.concurrent.*;
 import java.util.stream.Stream;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.javatuples.Pair;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 
@@ -32,6 +35,11 @@ public class RDPFileConcurrentProcessCtr {
     //Queue for the file content encapsulated into ArrayList<RDPFileLineData>
     private final BlockingQueue<ArrayList<RDPFileLineData>> parsedFiles
                                                               = new ArrayBlockingQueue<>(1000);
+
+    //As we want to read not a complete file every time but just a new portion of data
+    //we are keeping track of a position after each last read and next time
+    //start from the last saved position. The first reading must start from 0
+    private final Map<String, Long> trackingPosInFile =new TreeMap<>();
 
     //Executor service for two threads:  file data reader and file data parser
     private static final Executor executor  = Executors.newFixedThreadPool(2);
@@ -58,6 +66,25 @@ public class RDPFileConcurrentProcessCtr {
             }
         };
         //Runnable for File Reader + Parser: called in a thread once list of file(s) is available
+        //       this.RDPFileDataReaderRunnable = () -> {
+//            Set<String> filesToBeRead;
+//            try {
+//                while (true){
+//                    filesToBeRead = filesToBeReadQueue.take();
+//                    for(String file : filesToBeRead){
+//                        RDPFileParser rdpFileParser = new RDPFileParser();
+//                        Stream<String> fileContent =RDPFileDataReader
+//                                .readCompleteDataFromFile(srcDirChecker.getSrcDir() + file);
+//                        parsedFiles.put(rdpFileParser.parseToFormat(fileContent));
+//                    }
+//                    filesToBeRead.clear();
+//                }
+//            } catch (InterruptedException e) {
+//                logger.fatal(e.getMessage());
+//            }
+//        };
+
+//Runnable for File Reader + Parser: called in a thread once list of file(s) is available
         this.RDPFileDataReaderRunnable = () -> {
             Set<String> filesToBeRead;
             try {
@@ -65,9 +92,20 @@ public class RDPFileConcurrentProcessCtr {
                     filesToBeRead = filesToBeReadQueue.take();
                     for(String file : filesToBeRead){
                         RDPFileParser rdpFileParser = new RDPFileParser();
-                        Stream<String> fileContent =RDPFileDataReader
-                                .readCompleteDataFromFile(srcDirChecker.getSrcDir() + file);
-                        parsedFiles.put(rdpFileParser.parseToFormat(fileContent));
+
+                        //Check if we have already read the file before
+                        //if not -> init a new entry with pos 0
+                        //if yes read from the last position saved
+                        //after reading completed -> update the pos
+
+                        if(!trackingPosInFile.containsKey(file)){
+                            trackingPosInFile.put(file,0L);
+                        }
+                        Pair<Stream<String>, Long> fileWithTrackingData =RDPFileDataReader
+                                .readFileFromPos(srcDirChecker.getSrcDir() + file,trackingPosInFile.get(file));
+
+                        parsedFiles.put(rdpFileParser.parseToFormat(fileWithTrackingData.getValue0()));
+                        trackingPosInFile.replace(file,fileWithTrackingData.getValue1());
                     }
                     filesToBeRead.clear();
                 }
