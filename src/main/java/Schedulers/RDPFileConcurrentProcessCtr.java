@@ -6,10 +6,7 @@ import FileDataParser.RDPFileParser.RDPFileParser;
 import RDPFileDataReader.RDPFileDataReader;
 import SourceDirChecker.SourceDirChecker;
 
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.concurrent.*;
 import java.util.stream.Stream;
 
@@ -23,7 +20,7 @@ public class RDPFileConcurrentProcessCtr {
 
     private static final Logger logger = LogManager.getLogger(RDPFileConcurrentProcessCtr.class);
 
-    private  Integer _trackInterval = 10;  // track interval in secs
+    private final Integer _trackInterval;  // track interval in secs
 
     //Scheduler for source directory checker. Normally should run approx. every 1-5 min to check for
     //new or modified files
@@ -40,6 +37,10 @@ public class RDPFileConcurrentProcessCtr {
     //we are keeping track of a position after each last read and next time
     //start from the last saved position. The first reading must start from 0
     private final Map<String, Long> trackingPosInFile =new TreeMap<>();
+
+    //Also store the data of a file
+    private final Map<String, String> dateInFile =new TreeMap<>();
+
 
     //Executor service for two threads:  file data reader and file data parser
     private static final Executor executor  = Executors.newFixedThreadPool(2);
@@ -65,24 +66,7 @@ public class RDPFileConcurrentProcessCtr {
                 logger.fatal(e.getMessage());
             }
         };
-        //Runnable for File Reader + Parser: called in a thread once list of file(s) is available
-        //       this.RDPFileDataReaderRunnable = () -> {
-//            Set<String> filesToBeRead;
-//            try {
-//                while (true){
-//                    filesToBeRead = filesToBeReadQueue.take();
-//                    for(String file : filesToBeRead){
-//                        RDPFileParser rdpFileParser = new RDPFileParser();
-//                        Stream<String> fileContent =RDPFileDataReader
-//                                .readCompleteDataFromFile(srcDirChecker.getSrcDir() + file);
-//                        parsedFiles.put(rdpFileParser.parseToFormat(fileContent));
-//                    }
-//                    filesToBeRead.clear();
-//                }
-//            } catch (InterruptedException e) {
-//                logger.fatal(e.getMessage());
-//            }
-//        };
+
 
 //Runnable for File Reader + Parser: called in a thread once list of file(s) is available
         this.RDPFileDataReaderRunnable = () -> {
@@ -97,14 +81,19 @@ public class RDPFileConcurrentProcessCtr {
                         //if not -> init a new entry with pos 0
                         //if yes read from the last position saved
                         //after reading completed -> update the pos
-
+                        //Also check and save date for the file once
                         if(!trackingPosInFile.containsKey(file)){
+
                             trackingPosInFile.put(file,0L);
+
+                            String date = RDPFileDataReader.readDateFromFile(srcDirChecker.getSrcDir() + file);
+                            dateInFile.put(file, date);
                         }
+
                         Pair<Stream<String>, Long> fileWithTrackingData =RDPFileDataReader
                                 .readFileFromPos(srcDirChecker.getSrcDir() + file,trackingPosInFile.get(file));
 
-                        parsedFiles.put(rdpFileParser.parseToFormat(fileWithTrackingData.getValue0()));
+                        parsedFiles.put(rdpFileParser.parseToFormat(dateInFile.get(file),fileWithTrackingData.getValue0()));
                         trackingPosInFile.replace(file,fileWithTrackingData.getValue1());
                     }
                     filesToBeRead.clear();

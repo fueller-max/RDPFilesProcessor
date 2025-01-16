@@ -15,31 +15,21 @@ public class RDPFileParser {
     private static final Pattern TIME_PATTERN
         = Pattern.compile("^([0-1][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]$");
 
-    public ArrayList<RDPFileLineData> parseToFormat(Stream<String> stream) {
+    public ArrayList<RDPFileLineData> parseToFormat(String date, Stream<String> stream) {
     /***
      * input arg: stream of lines from a file
      * output: List of DPFileLineData
     */
         ArrayList<RDPFileLineData> result = new ArrayList<>();
-        final String[] date = new String[1]; // workaround for the date to be updated in lambda expression.
 
         stream.forEach(str -> {
 
             String[] strContent = str.split(";");
 
-            //Extract the date from the file
-            // (the date is the same for all entries in the file given)
-            //Normally, it is the 4th line in file
-            if(strContent[0].contains("Date:")){
-                String[] dateStr = strContent[0].split(" ");
-                if(dateStr.length > 2){
-                    date[0] = dateStr[1];
-                }
-            }
             //in case the line has correct time format create a data entry
             if(TIME_PATTERN.matcher(strContent[0]).matches()){
 
-                result.add(parseStringArrayToRDPFileLineData(date[0], strContent));
+                result.add(parseStringArrayToRDPFileLineData(date, strContent));
 
             }
 
@@ -68,7 +58,9 @@ public class RDPFileParser {
             return new RDPFileLineData(_date, time, id, deviceList, readList, code);
         }
         
-        return new RDPFileLineData("01-01-1970", "00:00:00", null, null, null, null);
+        return new RDPFileLineData("00-00-0000", "00:00:00", null, null, null, null);
     }
     
 }
+
+

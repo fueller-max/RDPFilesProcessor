@@ -59,6 +59,8 @@ public class SourceDirChecker {
                     BasicFileAttributes attrExisted = filesAttributes.get(_file);
                     if(!attrExisted.lastModifiedTime().equals(attr.lastModifiedTime())){
                             filesToBeRead.add(_file);
+                            //update attr
+                            filesAttributes.put(_file, attr);
                     }
                 }
 
@@ -78,9 +80,14 @@ public class SourceDirChecker {
         //Put the produced Set in the external blocking queue to be consumed
         //The queue must be empty before we put produced into it
         //IMPORTANT! filesToBeRead must be cleared in consumer!
-        logger.info("Waiting the blocking queue to be empty...");
-        queue.put(filesToBeRead);
-        logger.info("List of files has been added to queue");
+        if(!filesToBeRead.isEmpty()){
+            logger.info("Waiting the blocking queue to be empty...");
+            queue.put(filesToBeRead);
+            logger.info("List of files has been added to queue");
+        }else{
+            logger.info("No new data provided...");
+        }
+
     }
 
 }

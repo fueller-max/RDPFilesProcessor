@@ -34,10 +34,16 @@ public class RDPFileDataReader{
         List<String> fileLines = new ArrayList<>();
         try(RandomAccessFile raf = new RandomAccessFile(pathToFile, "r");){
             if (pos < 0 || pos> raf.length()) {
+                logger.error("Fatal error during processing a file: {}", pathToFile);
+                logger.error("Position is out of range: {}", pos);
+                logger.error("the file length: {}", raf.length());
+
                 throw new RuntimeException("Position is outside of the permissible range");
+
             }
 
             while (pos < raf.length()){
+                raf.seek(pos);
                 fileLines.add(raf.readLine());
                 pos = raf.getFilePointer();
             }
@@ -45,7 +51,35 @@ public class RDPFileDataReader{
         } catch (IOException ex) {
             logger.error("A Problem occurred during random reading from file: {}", ex.getMessage());
         }
+        pos += 2;  // If we reach EOF the function returns -1 byte position(normal behavior);
+                   // In order to be correct at the next read add 2 byte
         return new Pair<>(fileLines.stream(), pos);
+    }
+
+    public static String readDateFromFile(String pathToFile) {
+        int pos = 0;
+        String[] fileLines = new String[5];
+
+        try(RandomAccessFile raf = new RandomAccessFile(pathToFile, "r");) {
+            while (pos < 5){
+                fileLines[pos] = (raf.readLine());
+                pos++;
+            }
+        } catch (IOException ex) {
+            logger.error("A Problem occurred during extracting the  from file: {}", ex.getMessage());
+        }
+
+        //Extract the date from the file
+        // (the date is the same for all entries in the file given)
+        //Normally, it is the 4th line in file
+        if(fileLines[3] != null && fileLines[3].contains("Date:")){
+            String[] dateStr = fileLines[3].split(" ");
+            if(dateStr.length > 2){
+               return dateStr[1];
+            }
+        }
+
+        return "00-00-0000";
     }
 
 }
