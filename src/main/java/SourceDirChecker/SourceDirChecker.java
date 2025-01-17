@@ -81,7 +81,10 @@ public class SourceDirChecker {
         //The queue must be empty before we put produced into it
         //IMPORTANT! filesToBeRead must be cleared in consumer!
         if(!filesToBeRead.isEmpty()){
-            logger.info("Waiting the blocking queue to be empty...");
+            logger.info("Waiting the blocking queue to be empty to add the files:");
+            for (String file : filesToBeRead){
+                logger.info(file);
+            }
             queue.put(filesToBeRead);
             logger.info("List of files has been added to queue");
         }else{

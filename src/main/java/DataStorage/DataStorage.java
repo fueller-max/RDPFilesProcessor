@@ -28,6 +28,8 @@ public class DataStorage {
 
     private final String dstToOutputFiles;
 
+    private final Object mutex = new Object();
+
     private final Map<String, ArrayList<RDPFileLineData>>  scannerDatabase =
             new TreeMap<>();
 
@@ -41,9 +43,9 @@ public class DataStorage {
             try {
                 File outputFile = new File(src);
                 if (outputFile.createNewFile()) {
-                    logger.info("File created: {}", outputFile.getName());
+                    logger.info("File created, adding data: {}", outputFile.getName());
                 } else {
-                    logger.info("File already exists: {}", outputFile.getName());
+                    logger.info("Adding data to the file: {}", outputFile.getName());
                 }
             } catch (IOException e) {
                 logger.error("An error occurred: {}",e.getMessage());
@@ -63,7 +65,6 @@ public class DataStorage {
             catch(IOException e){
                logger.error("Error during handling the output file {}", e.getMessage());
             }
-
         }
     }
 
@@ -72,22 +73,25 @@ public class DataStorage {
     }
 
     public void saveCompleteInternalStorageOnDisk(){
-        for(String id : scannerDatabase.keySet()){
-            String dstFile = dstToOutputFiles + id + ".txt";
-            CreateFile.checkAndCreateNewFile(dstFile);
-            WriteDataToFile.writeBatchDataIntoFile(scannerDatabase.get(id),dstFile,true);
+        synchronized (mutex) {
+            for(String id : scannerDatabase.keySet()){
+                String dstFile = dstToOutputFiles + id + ".txt";
+                CreateFile.checkAndCreateNewFile(dstFile);
+                WriteDataToFile.writeBatchDataIntoFile(scannerDatabase.get(id),dstFile,true);
+            }
+            scannerDatabase.clear();
         }
-        scannerDatabase.clear();
     }
 
     private void storeInternally(RDPFileLineData rdpLine){
         String  id = rdpLine.getId();
-
-        if(scannerDatabase.containsKey(id)){
-           scannerDatabase.get(id).add(rdpLine);
-        }else{
-            scannerDatabase.put(id,new ArrayList<RDPFileLineData>());
-            scannerDatabase.get(id).add(rdpLine);
+        synchronized (mutex){
+            if(scannerDatabase.containsKey(id)){
+                scannerDatabase.get(id).add(rdpLine);
+            }else{
+                scannerDatabase.put(id, new ArrayList<>());
+                scannerDatabase.get(id).add(rdpLine);
+            }
         }
     }
 

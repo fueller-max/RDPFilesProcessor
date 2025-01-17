@@ -68,7 +68,7 @@ public class RDPFileConcurrentProcessCtr {
         };
 
 
-//Runnable for File Reader + Parser: called in a thread once list of file(s) is available
+         //Runnable for File Reader + Parser: called in a thread once list of file(s) is available
         this.RDPFileDataReaderRunnable = () -> {
             Set<String> filesToBeRead;
             try {
@@ -81,19 +81,22 @@ public class RDPFileConcurrentProcessCtr {
                         //if not -> init a new entry with pos 0
                         //if yes read from the last position saved
                         //after reading completed -> update the pos
-                        //Also check and save date for the file once
+                        //Also check and save date for the file only once
                         if(!trackingPosInFile.containsKey(file)){
-
                             trackingPosInFile.put(file,0L);
-
                             String date = RDPFileDataReader.readDateFromFile(srcDirChecker.getSrcDir() + file);
                             dateInFile.put(file, date);
                         }
 
                         Pair<Stream<String>, Long> fileWithTrackingData =RDPFileDataReader
                                 .readFileFromPos(srcDirChecker.getSrcDir() + file,trackingPosInFile.get(file));
-
-                        parsedFiles.put(rdpFileParser.parseToFormat(dateInFile.get(file),fileWithTrackingData.getValue0()));
+                        ArrayList<RDPFileLineData> parsedLines = rdpFileParser
+                                                    .parseToFormat(dateInFile.get(file),fileWithTrackingData.getValue0());
+                        parsedFiles.put(parsedLines);
+//                       // logger.info("Parsed data from a file {}:", file );
+//                        for(RDPFileLineData line : parsedLines){
+//                            logger.info(line.toString());
+//                        }
                         trackingPosInFile.replace(file,fileWithTrackingData.getValue1());
                     }
                     filesToBeRead.clear();
@@ -125,7 +128,7 @@ public class RDPFileConcurrentProcessCtr {
         final ScheduledFuture<?> sourceDirCheckerHandle =
                 scheduler.scheduleAtFixedRate(srcDirectoryCheckerRunnable, 0, _trackInterval, SECONDS);
 
-          executor.execute(RDPFileDataReaderRunnable);
+         executor.execute(RDPFileDataReaderRunnable);
          executor.execute(RDPDataStorageRunnable);
     }
 

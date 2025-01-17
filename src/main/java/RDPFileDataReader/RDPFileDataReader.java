@@ -34,6 +34,7 @@ public class RDPFileDataReader{
         List<String> fileLines = new ArrayList<>();
         try(RandomAccessFile raf = new RandomAccessFile(pathToFile, "r");){
             if (pos < 0 || pos> raf.length()) {
+
                 logger.error("Fatal error during processing a file: {}", pathToFile);
                 logger.error("Position is out of range: {}", pos);
                 logger.error("the file length: {}", raf.length());
@@ -43,15 +44,18 @@ public class RDPFileDataReader{
             }
 
             while (pos < raf.length()){
+
                 raf.seek(pos);
-                fileLines.add(raf.readLine());
+                String line = raf.readLine();
+                fileLines.add(line);
                 pos = raf.getFilePointer();
+
             }
 
         } catch (IOException ex) {
             logger.error("A Problem occurred during random reading from file: {}", ex.getMessage());
         }
-        pos += 2;  // If we reach EOF the function returns -1 byte position(normal behavior);
+        //pos += 2;  // If we reach EOF the function returns -1 byte position(normal behavior);
                    // In order to be correct at the next read add 2 byte
         return new Pair<>(fileLines.stream(), pos);
     }

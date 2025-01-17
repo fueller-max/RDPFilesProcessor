@@ -1,12 +1,19 @@
 package FileDataParser.RDPFileParser;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
+
+import DataStorage.DataStorage;
 import FileDataParser.RDPFileLineData.RDPFileLineData;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class RDPFileParser {
+
+    private static final Logger logger = LogManager.getLogger(RDPFileParser.class);
 
     private static final Integer ARRAY_SIZE_NO_READ = 12;
     private static final Integer ARRAY_SIZE_GOOD_READ = 23;
@@ -31,6 +38,8 @@ public class RDPFileParser {
 
                 result.add(parseStringArrayToRDPFileLineData(date, strContent));
 
+            }else{
+                //logger.error("The line has invalid format: {}", Arrays.toString(strContent));
             }
 
         });
