@@ -1,0 +1,1 @@
+date=13-12-2024, time=15:30:57, id=21, deviceList=111111110000000000000000, readList=, code=
