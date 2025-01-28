@@ -1,5 +1,6 @@
 package UnitTests;
 
+import DataStorage.DBStorage.POJO.RDPEntry;
 import DataStorage.DBStorage.POJO.Scanner_ID_11;
 import DataStorage.DBStorage.POJO.Scanner_ID_12;
 import Utils.PostgresSQLDriver;
@@ -10,6 +11,8 @@ import org.junit.Test;
 
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TestDBHibernate {
 
@@ -56,6 +59,25 @@ public class TestDBHibernate {
 
         postgresSQLDriver.insertEntry(scanner_id_11);
         postgresSQLDriver.insertEntry(scanner_id_12);
+
+    }
+
+    @Test
+    public void insertBatchOfEntries(){
+
+        List<RDPEntry> entries = new ArrayList<>();
+
+        for (int i = 0; i < 10; ++i){
+            RDPEntry entry = new Scanner_ID_11();
+            entry.setCode("0050115298");
+            entry.setDeviceList("111111111111000000000000");
+            entry.setReadList("001111001100000000000000");
+            LocalDateTime timeStamp = LocalDateTime.now();
+            entry.setTimeStamp(timeStamp);
+            entries.add(entry);
+        }
+
+        postgresSQLDriver.insertBatchOfEntries(entries);
 
     }
 

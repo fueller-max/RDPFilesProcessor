@@ -13,9 +13,9 @@ public class Main {
 
 
 
-//        RDPFileConcurrentProcessCtr fileProcessingController
-//                = new RDPFileConcurrentProcessCtr(srcPathToFiles, dstPathToFiles, trackInterval);
-//        fileProcessingController.startControl();
+        RDPFileConcurrentProcessCtr fileProcessingController
+                = new RDPFileConcurrentProcessCtr(srcPathToFiles, dstPathToFiles, trackInterval);
+        fileProcessingController.startControl();
 
     }
 }

@@ -1,19 +1,20 @@
 package DataStorage;
 
+import DataStorage.DBStorage.POJO.RDPEntry;
 import FileDataParser.RDPFileLineData.RDPFileLineData;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.TreeMap;
+import java.lang.reflect.InvocationTargetException;
+import java.util.*;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 
 
+import Utils.PostgresSQLDriver;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -30,12 +31,19 @@ public class DataStorage {
 
     private final Object mutex = new Object();
 
+    private final boolean storeToDataBase;
+    private final DBPersistance dbPersistance;
+
+
     private final Map<String, ArrayList<RDPFileLineData>>  scannerDatabase =
             new TreeMap<>();
 
-    public DataStorage(String dstToOutputFiles) {
+    public DataStorage(String dstToOutputFiles, boolean writeToDB, Optional<String> dbCfg) {
         this.dstToOutputFiles = dstToOutputFiles;
+        this.storeToDataBase = writeToDB;
 
+        String databaseCfg = dbCfg.orElse(null);
+        dbPersistance = new DBPersistance(databaseCfg);
     }
 
     private static class CreateFile {
@@ -55,8 +63,8 @@ public class DataStorage {
 
     private static class WriteDataToFile {
 
-        public static void writeBatchDataIntoFile(ArrayList<RDPFileLineData> batch,String src, boolean append){
-            try(BufferedWriter writer = new BufferedWriter(new FileWriter(src,append))){
+        public static void writeBatchDataIntoFile(ArrayList<RDPFileLineData> batch,String dst, boolean append){
+            try(BufferedWriter writer = new BufferedWriter(new FileWriter(dst,append))){
                 for (RDPFileLineData rdpLine : batch){
                     writer.write(rdpLine.toString());
                     writer.newLine();
@@ -68,16 +76,65 @@ public class DataStorage {
         }
     }
 
+
+    private static class DBPersistance{
+
+        private final PostgresSQLDriver postgresSQLDriver;
+
+       public DBPersistance(String cfg){
+        if(cfg != null){
+            postgresSQLDriver = new PostgresSQLDriver(cfg);
+        }else{
+            logger.error("No cfg for data base provided!");
+            throw new IllegalArgumentException("No cfg for data base provided!");
+        }
+
+       }
+
+       public void storeBatchInDB(ArrayList<RDPFileLineData> entries) throws ClassNotFoundException,
+               InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
+
+           List<RDPEntry> RDPEntries = new ArrayList<>();
+
+           for(var entry : entries){
+               RDPEntry rdpEntry= getRDPEntryForDB(entry);
+               rdpEntry.setCode(entry.getCode());
+               rdpEntry.setDeviceList("not set yet");
+               rdpEntry.setReadList("not set yet");
+               rdpEntry.setTimeStamp(entry.getTimeStamp());
+               RDPEntries.add(rdpEntry);
+               //logger.info("RDP Entry for DB storage: {}", rdpEntry);
+           }
+
+           postgresSQLDriver.insertBatchOfEntries(RDPEntries);
+
+       }
+
+       private RDPEntry getRDPEntryForDB(RDPFileLineData rdpLine) throws ClassNotFoundException,
+               NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+           String id = rdpLine.getId();
+           Class<?> scanner_id_x = Class.forName("DataStorage.DBStorage.POJO.Scanner_ID_" + id);
+           return (RDPEntry) scanner_id_x.getDeclaredConstructor().newInstance();
+       }
+    }
+
     public void store(RDPFileLineData rdpLine){
         storeInternally(rdpLine);
     }
 
-    public void saveCompleteInternalStorageOnDisk(){
+    public void saveCompleteInternalStorageOnDisk() {
         synchronized (mutex) {
-            for(String id : scannerDatabase.keySet()){
+            for (String id : scannerDatabase.keySet()) {
                 String dstFile = dstToOutputFiles + id + ".txt";
                 CreateFile.checkAndCreateNewFile(dstFile);
-                WriteDataToFile.writeBatchDataIntoFile(scannerDatabase.get(id),dstFile,true);
+                WriteDataToFile.writeBatchDataIntoFile(scannerDatabase.get(id), dstFile, true);
+                if (storeToDataBase) {
+                    try {
+                        dbPersistance.storeBatchInDB(scannerDatabase.get(id));
+                    } catch (Exception e) {
+                        logger.fatal("Problem with DB storage: {}", e.getMessage());
+                    }
+                }
             }
             scannerDatabase.clear();
         }

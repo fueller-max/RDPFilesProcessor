@@ -17,8 +17,19 @@
         <!-- Set the current session context -->
         <property name="current_session_context_class">thread</property>
         <!-- Validate  the database schema with classes on startup -->
-        <property name="hbm2ddl.auto">create-only</property>
+        <property name="hbm2ddl.auto">create-drop</property>
+        <!--Set batch size for 5 entries-->
+        <property name="hibernate.jdbc.batch_size">100</property>
         <mapping class="DataStorage.DBStorage.POJO.Scanner_ID_11"></mapping>
         <mapping class="DataStorage.DBStorage.POJO.Scanner_ID_12"></mapping>
+        <mapping class="DataStorage.DBStorage.POJO.Scanner_ID_13"></mapping>
+        <mapping class="DataStorage.DBStorage.POJO.Scanner_ID_14"></mapping>
+        <mapping class="DataStorage.DBStorage.POJO.Scanner_ID_15"></mapping>
+        <mapping class="DataStorage.DBStorage.POJO.Scanner_ID_16"></mapping>
+        <mapping class="DataStorage.DBStorage.POJO.Scanner_ID_17"></mapping>
+        <mapping class="DataStorage.DBStorage.POJO.Scanner_ID_18"></mapping>
+        <mapping class="DataStorage.DBStorage.POJO.Scanner_ID_19"></mapping>
+        <mapping class="DataStorage.DBStorage.POJO.Scanner_ID_20"></mapping>
+        <mapping class="DataStorage.DBStorage.POJO.Scanner_ID_21"></mapping>
     </session-factory>
 </hibernate-configuration>

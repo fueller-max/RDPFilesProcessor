@@ -8,7 +8,8 @@ import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.junit.Test;
+
+import java.util.List;
 
 
 public class PostgresSQLDriver {
@@ -35,6 +36,17 @@ public class PostgresSQLDriver {
         session.close();
     }
 
+    public void insertBatchOfEntries( List<RDPEntry> entries ){
+        Session session = sessionFactory.openSession();
+        Transaction t = session.beginTransaction();
 
+        for (RDPEntry entry : entries){
+            session.persist(entry);
+        }
+
+        t.commit();
+        // sessionFactory.close();
+        session.close();
+    }
 
 }

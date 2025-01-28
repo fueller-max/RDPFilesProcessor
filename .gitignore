@@ -8,6 +8,12 @@
 # Log file
 *.log
 
+# dat file
+*.dat
+
+# txt files
+*.txt
+
 # BlueJ files
 *.ctxt
 

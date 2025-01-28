@@ -55,7 +55,7 @@ public class RDPFileConcurrentProcessCtr {
     public RDPFileConcurrentProcessCtr(String srcDir, String dstDir, Integer trackInterval){
         this._trackInterval = trackInterval;
         this.srcDirChecker =  new SourceDirChecker(srcDir, filesToBeReadQueue);
-        this.dataStorage = new DataStorage(dstDir);
+        this.dataStorage = new DataStorage(dstDir, true, Optional.of("hibernate.cfg.xml"));
 
 
         //Runnable for source directory checker: executed by scheduler
@@ -66,7 +66,6 @@ public class RDPFileConcurrentProcessCtr {
                 logger.fatal(e.getMessage());
             }
         };
-
 
          //Runnable for File Reader + Parser: called in a thread once list of file(s) is available
         this.RDPFileDataReaderRunnable = () -> {
@@ -93,10 +92,7 @@ public class RDPFileConcurrentProcessCtr {
                         ArrayList<RDPFileLineData> parsedLines = rdpFileParser
                                                     .parseToFormat(dateInFile.get(file),fileWithTrackingData.getValue0());
                         parsedFiles.put(parsedLines);
-//                       // logger.info("Parsed data from a file {}:", file );
-//                        for(RDPFileLineData line : parsedLines){
-//                            logger.info(line.toString());
-//                        }
+
                         trackingPosInFile.replace(file,fileWithTrackingData.getValue1());
                     }
                     filesToBeRead.clear();
