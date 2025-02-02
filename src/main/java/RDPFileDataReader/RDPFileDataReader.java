@@ -55,8 +55,7 @@ public class RDPFileDataReader{
         } catch (IOException ex) {
             logger.error("A Problem occurred during random reading from file: {}", ex.getMessage());
         }
-        //pos += 2;  // If we reach EOF the function returns -1 byte position(normal behavior);
-                   // In order to be correct at the next read add 2 byte
+
         return new Pair<>(fileLines.stream(), pos);
     }
 

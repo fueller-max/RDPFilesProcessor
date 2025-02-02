@@ -1,3 +1,0 @@
-date=06-12-2024, time=01:40:37, id=20, deviceList=111111110000000000000000, readList=, code=
-date=06-12-2024, time=01:40:40, id=20, deviceList=111111110000000000000000, readList=, code=
-date=06-12-2024, time=01:40:42, id=20, deviceList=111111110000000000000000, readList=, code=
