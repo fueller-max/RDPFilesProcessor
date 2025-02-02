@@ -27,8 +27,19 @@ target/
 target/*
 
 #ouput files
-*/out/*
-*/data_files/*
+**/out
+/out
+out/
+out/*
+
+#data files
+**/data_files
+/data_files
+data_files/
+data_files/*
+
+
+
 
 # Package Files #
 *.jar
