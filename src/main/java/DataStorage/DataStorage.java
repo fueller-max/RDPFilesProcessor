@@ -98,9 +98,10 @@ public class DataStorage {
 
            for(var entry : entries){
                RDPEntry rdpEntry= getRDPEntryForDB(entry);
+               rdpEntry.setScanner_id(entry.getId());
                rdpEntry.setCode(entry.getCode());
-               rdpEntry.setDeviceList("not set yet");
-               rdpEntry.setReadList("not set yet");
+               rdpEntry.setDeviceList(entry.getDeviceList());
+               rdpEntry.setReadList(entry.getReadList());
                rdpEntry.setTimeStamp(entry.getTimeStamp());
                RDPEntries.add(rdpEntry);
                //logger.info("RDP Entry for DB storage: {}", rdpEntry);

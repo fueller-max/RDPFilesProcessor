@@ -18,6 +18,7 @@ public abstract class RDPEntry {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", nullable = false)
     private Long id;
+    private String scanner_id;
     private LocalDateTime timeStamp;
     private String code;
     private String deviceList;
